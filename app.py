@@ -54,7 +54,7 @@ def selected():
     records = cur.fetchall()
     conn.close()
     response_string=""
-    response_String+="<table>"
+    response_string+="<table>"
     for player in records:
         response_string+="<tr>"
         for info in player:
