@@ -6,7 +6,7 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello, World from Joe in 3308'
 
-@app.route('db_test')
+@app.route('/db_test')
 def testing():
     conn = psycopg2.connect("postgresql://joes_database_user:OZnyo4u2sOfojDFonBPWKhQ75gGrZYFt@dpg-d48jgvm3jp1c73ck6n6g-a/joes_database")
     conn.close()
